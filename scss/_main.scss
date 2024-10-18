@@ -1,0 +1,171 @@
+#top {
+  section {
+    h2 {
+      background-color: $secondary-color;
+      position: sticky;
+      top: 71.2px;
+    }
+
+    p {
+      line-height: 1.2;
+    }
+  }
+
+  section:nth-child(2) > .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, 496px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img:nth-child(1) {
+      height: 40%;
+    }
+
+    img:nth-child(3) {
+      height: 40%;
+    }
+
+    img:nth-child(7) {
+      height: 50%;
+    }
+    img:nth-child(8) {
+      height: 80%;
+    }
+
+    img:nth-child(10) {
+      height: 70%;
+    }
+    img:nth-child(11) {
+      height: 70%;
+    }
+  }
+
+  section:nth-child(3) > .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, 496px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img:nth-child(3) {
+      height: 60%;
+    }
+
+    img:nth-child(6) {
+      height: 60%;
+    }
+    img:nth-child(9) {
+      height: 95%;
+    }
+
+    img:nth-child(10) {
+      height: 60%;
+    }
+    img:nth-child(11) {
+      height: 60%;
+    }
+  }
+
+  section:nth-child(4) > .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, 496px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img:nth-child(2) {
+      height: 98%;
+    }
+
+    img:nth-child(3) {
+      height: 40%;
+    }
+
+    img:nth-child(5) {
+      height: 40%;
+    }
+
+    img:nth-child(6) {
+      height: 90%;
+    }
+
+    img:nth-child(7) {
+      height: 75%;
+    }
+
+    img:nth-child(9) {
+      height: 75%;
+    }
+
+    img:nth-child(10) {
+      height: 99.8%;
+    }
+    img:nth-child(12) {
+      height: 60%;
+    }
+  }
+}
+
+.fruit-hover {
+  p {
+    font-size: 1.5rem;
+  }
+
+  figure {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    figcaption {
+      font-size: 1.5rem;
+      background-color: $error-color;
+      color: white;
+      width: fit-content;
+      position: fixed;
+      z-index: 1;
+      top: 40%;
+      opacity: 0;
+    }
+    &:hover figcaption {
+      opacity: 1;
+    }
+  }
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  font-size: large;
+  background-color: black;
+  padding: 16px;
+  cursor: pointer;
+  z-index: 1;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

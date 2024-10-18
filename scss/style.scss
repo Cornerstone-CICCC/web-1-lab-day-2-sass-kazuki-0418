@@ -1,0 +1,12 @@
+// Import scss
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  height: 100vh;
+  width: auto;
+}
